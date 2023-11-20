@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <!--Head element with Meta Data-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MazeBank</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/png" href="Maze.png">
+
+</head>
+
+<body>
+    <!--Div containers är för att ha sakerna på de ställen de ska vara genom att flera section och organisera sidan-->
+    <div class="Menu">
+        <ul class="Menu-list">
+
+            <li onclick="location.href='Login.html' ">HomePage</li>
+            <li>Services</li>
+            <li>News</li>
+            <li>About us</li>
+        </ul>
+    </div>
+    <div>
+        <h1 class="Loginheader">Welcome to</h1>
+        <h3 class="Loginheader" style="user-select: all; color: aqua; text-shadow: #000000 0px 0 10px;">MazeBank</h1>
+    </div>
+   
+    <div class="Mazediv">
+        <img onclick="location.assign('Login.html')"; class="Mazediv-img" src="Maze.png" alt="">
+    </div>
+
+    <h1 class="Loginheader">Login</h1>
+    <div class="placeholders">
+        <input id="username" type="text" placeholder="Username" autocomplete="none">
+        <br>
+        <img onclick="passwordEye();" class="Passwordeye" src="eye-svgrepo-com.svg" alt="">
+        <input id="password" type="password" placeholder="Password">
+        <br>
+        <button id="Login" onclick="Login();">Login</button>
+        <button onclick="Login();">Sign Up</button>
+
+        
+    </div>
+    <div style="text-align: center;">
+        <img src="Mazebanktower.jpg" alt="">
+    </div>
+    
+    <script src="script.js"></script>
+
+    <div class="bottom-bar">
+        <h1 class="bottom-bar-text">MazeBank.com 2023 All Rights
+            Reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color: aqua;" href="https://maze.co/privacy-policy/" target="_blank">Privacy</a></h1>
+    </div>
+
+</body>
+
+</html>
